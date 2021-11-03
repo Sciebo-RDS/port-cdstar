@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+pactman = "*"
+pytest-cov = "*"
+
+[packages]
+requests = "*"
+jaeger-client = "*"
+gevent = "*"
+connexion = {extras = ["swagger-ui"],version = "*"}
+connexion-plus = "*"
+pyld = "*"
+research-data-services-common = {extras = ["flask"], version = "*"}
+requests-jwt = "*"
+openapi-spec-validator = "<0.3"
+
+[requires]
+python_version = "3.8"
