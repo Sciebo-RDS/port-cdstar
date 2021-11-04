@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 
-from __init__ import app, register_service
-import os
-
+from __init__ import app
 from RDS import Util, LoginService, FileTransferMode, FileTransferArchive
+
 service = LoginService(
     servicename="port-cdstar",
     implements=["metadata"],
-    fileTransferMode=FileTransferMode.passive,
+    fileTransferMode=FileTransferMode.active,
     fileTransferArchive=FileTransferArchive.none,
     userId=False,
     password=False,
@@ -16,7 +15,7 @@ service = LoginService(
     infoUrl="https://docs.gwdg.de/doku.php?id=en:start",
     helpUrl="https://docs.gwdg.de/doku.php?id=en:services:storage_services:gwdg_cdstar:start",
     icon="./datasafe.svg",
-    displayName="CDStar",
+    displayName="CDSTAR",
 )
 Util.register_service(service)
 
