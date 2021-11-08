@@ -13,8 +13,6 @@ logger = logging.getLogger()
 def require_api_key(api_method):
     @wraps(api_method)
     def check_api_key(*args, **kwargs):
-        g.zenodo = None
-
         try:
             req = request.get_json(force=True, cache=True)
         except:
@@ -37,4 +35,3 @@ def require_api_key(api_method):
         return api_method(*args, **kwargs)
 
     return check_api_key
-
