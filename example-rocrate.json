@@ -1,0 +1,121 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      },
+      "identifier": [
+        {
+          "@id": "#:localid:describo:72ff781e-102a-4f36-bd4e-e3342354b48c"
+        }
+      ]
+    },
+    {
+      "name": "my Research Object Crate123",
+      "@id": "./",
+      "@type": "Dataset",
+      "creator": [
+        {
+          "@id": "9b410d69-981a-4193-aca0-944119b2d615"
+        },
+        {
+          "@id": "96b1874b-bf4b-4bb1-991e-a14bb7ceac01"
+        }
+      ],
+      "description": [
+        "Dies ist mein Projekt."
+      ],
+      "osfcategory": [
+        "analysis"
+      ],
+      "datePublished": [
+        "2021-08-16T22:00:00.000Z"
+      ],
+      "zenodocategory": [
+        "publication/book"
+      ]
+    },
+    {
+      "name": "Peter Heiss",
+      "@id": "9b410d69-981a-4193-aca0-944119b2d615",
+      "@type": "Person",
+      "affiliation": [
+        {
+          "@id": "075d208f-1f52-4a38-a4b7-4de698be5d91"
+        }
+      ]
+    },
+    {
+      "name": "Lake-Constance.jpg",
+      "@id": "Lake-Constance.jpg",
+      "@type": "File",
+      "contentSize": [
+        "538942"
+      ],
+      "encodingFormat": [
+        "image/jpeg"
+      ],
+      "dateModified": [
+        "2021-05-12T16:41:33Z"
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Teotihuacan.jpg",
+      "@id": "Teotihuacan.jpg",
+      "@type": "File",
+      "contentSize": [
+        "228789"
+      ],
+      "encodingFormat": [
+        "image/jpeg"
+      ],
+      "dateModified": [
+        "2021-05-12T16:41:33Z"
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "name": "new entity",
+      "@id": "96b1874b-bf4b-4bb1-991e-a14bb7ceac01",
+      "@type": "Person",
+      "@reverse": {
+        "creator": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WWU",
+      "@id": "075d208f-1f52-4a38-a4b7-4de698be5d91",
+      "@type": "Organization",
+      "@reverse": {
+        "affiliation": [
+          {
+            "@id": "9b410d69-981a-4193-aca0-944119b2d615"
+          }
+        ]
+      }
+    }
+  ]
+}
