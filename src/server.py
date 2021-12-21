@@ -14,7 +14,7 @@ service = LoginService(
                  "de": "CDSTAR (Common Data Storage ARchitecture) ist ein kopfloser Datenspeicher und ein Rahmen für Anwendungen zur Verwaltung von Forschungsdaten. Ziel ist es, einen umfangreichen Satz gemeinsamer Funktionen (skalierbare Speicherung, Veröffentlichung, Archivierung, Metadaten-Anmerkungen, Zugriffsverwaltung und Suche) als Webdienst bereitzustellen, auf dem andere Anwendungen aufbauen können, und die rasche Entwicklung hochgradig angepasster Werkzeuge und Arbeitsabläufe für datenintensive Forschungsanwendungen zu vereinfachen."},
     infoUrl="https://docs.gwdg.de/doku.php?id=en:start",
     helpUrl="https://docs.gwdg.de/doku.php?id=en:services:storage_services:gwdg_cdstar:start",
-    icon="./datasafe.svg",
+    icon="./cdstar.svg",
     displayName="CDSTAR",
 )
 Util.register_service(service)
